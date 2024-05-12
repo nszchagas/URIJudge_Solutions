@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  java:
+    image: openjdk:19-slim-bullseye
+    entrypoint: tail -f /dev/null
+    working_dir: /root/codes
+    container_name: java
+    volumes:
+      - ./java:/root/codes
